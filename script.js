@@ -66,7 +66,6 @@ gsap.to("#page2 img", {
       scroller: "#main",
       trigger: "#page2 img",
       start: "top 80%",
-      // markers: true,
       scrub: 3
   }
 })
@@ -79,7 +78,6 @@ gsap.to("#main", {
       trigger: "#page2",
       start: "top -100%",
       end: "top -100%",
-      // markers: true,
       scrub: 3
   }
 })
@@ -92,7 +90,6 @@ gsap.to("svg", {
   scrollTrigger: {
       trigger: "svg",
       scroller: "#main",
-      // markers: "true",
       start: "top 45%",
       end: "top -50%",
       scrub: true,
@@ -116,7 +113,6 @@ gsap.to("#nav", {
   scrollTrigger: {
       trigger: "#nav h3",
       scroller: "#main",
-      // markers: "true",
       start: "top -100%",
       end: "top -100%",
       scrub: true,
@@ -130,7 +126,6 @@ gsap.to("svg", {
   scrollTrigger: {
       trigger: "svg",
       scroller: "#main",
-      // markers: "true",
       start: "top -350%",
       end: "top -350%",
       scrub: true,
@@ -142,7 +137,6 @@ gsap.to("#nav", {
   scrollTrigger: {
       trigger: "#nav h3",
       scroller: "#main",
-      // markers: "true",
       start: "top -400%",
       end: "top -400%",
       scrub: true,
@@ -175,7 +169,6 @@ gsap.to("#page5-div1",{
       scroller:"#main",
       start:"top 30%",
       end:"top 5%",
-      markers:true,
       pin:true
   }
 })
@@ -187,7 +180,6 @@ gsap.from("#page5-div2",{
       scroller:"#main",
       start:"top 85%",
       end:"top 82%",
-      markers:true,
       scrub:1
   }
 })

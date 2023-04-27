@@ -478,14 +478,12 @@ path{
     align-items: center;
     justify-content: center;
 }
-
 #page5-div1{
     height: 400px;
     width: 600px;
     position: absolute;
     background-size: cover;
     rotate:5deg;
-
     background-position: center;
     background-image: url(https://cdn.sanity.io/images/sjvffa0f/production/336838d48da46ea806426b4185e7f8a87262a6a5-1521x974.png/image.png?rect=1,0,1520,974&bg=F2F1EC&w=1024&h=656&auto=format);
 }
@@ -604,12 +602,57 @@ path{
     width: 80%;
     font-size: 3.3vw;
 }
-#page8{
-    min-height: 200vh;
+#page8 {
+    height: 100vh;
     width: 100%;
-    background-color: #060505;
+    background-color: #111;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 100px 80px 100px 10px;
 }
-
-@media (max-width:600px) {
-    
+#page8 h1 {
+    width: 70%;
+    font-size: 11vw;
+    line-height: 11vw;
+    color: #faf6ef;
+    text-transform: uppercase;
+    font-family: america;
+    margin-top: 40px;
+}
+#page8-part2 {
+    color: #faf6ef;
+    padding-top: 40px;   
+}
+#lola2 h2 {
+    font-size: 24px;
+    font-family: america;
+    font-weight: 100;
+    text-transform: uppercase;
+    -webkit-text-stroke: 0.4px #111;
+    letter-spacing: -1px;
+    margin-bottom: 13px;
+}
+#lola2 h3 {
+    font-size: 30px;
+    font-family: america;
+    font-weight: 100;
+    text-transform: uppercase;
+    margin-top: -3px;
+    -webkit-text-stroke: 0.6px #111;
+    letter-spacing: -1px;
+}
+#lola3 {
+    text-align: left;
+    margin-top: 40px;
+}
+#lola3 h4 {
+    font-size: 24px;
+    font-family: america;
+    font-weight: 100;
+    text-transform: uppercase;
+    margin-top: 3px;
+}
+#lola3 h4:hover{
+    color: #c45508;
 }
