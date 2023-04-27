@@ -1,0 +1,615 @@
+@font-face {
+    font-family: america;
+    src: url(./GT-America-Compressed-Bold.ttf);
+}
+@font-face {
+    font-family:america-b;
+    src: url(./GT-America-Compressed-Black-Trial.otf);
+}
+@font-face {
+    font-family: gilroy;
+    src: url(/First/);
+    font-weight: 500
+}
+@font-face {
+    font-family:gilroy ;
+    src: url(./);
+    font-weight: 600;
+}
+@font-face {
+    font-family:gilroy ;
+    src: url(./);
+    font-weight: 700;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:gilroy;
+}
+
+*::selection{
+    color: #fff;
+    background-color: #111;
+}
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+#main{
+    background-color: #fff;
+}
+#nav{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    position: fixed;
+    z-index: 99;
+    color: #c45508;
+}
+#nav h3{
+    font-family: america;
+    text-transform: uppercase;
+    color: inherit;
+    font-size: 28px;
+    width: 20%;
+    /* background-color: red; */
+    text-align: center;
+}
+#nav h3:nth-child(1){
+    text-align: left;
+
+}
+#nav h3:nth-child(2){
+    text-align: left;
+
+}
+#nav h3:nth-child(3){
+    text-align: right;
+
+}
+#nav h3:nth-child(4){
+    text-align: right;
+
+}
+
+#page1{
+    height: 100vh;
+    position: relative;
+    width: 100%;
+    background-image: url(https://cdn.sanity.io/images/sjvffa0f/production/b66561b8981387290c0f682665512759c66aa7bb-2880x1796.png/image.png?bg=F2F1EC&w=1440&h=898&auto=format);
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    background-color: #fff;
+}
+svg{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(1.4);
+    z-index: 99;
+    fill: #c45508;
+}
+path{
+    fill: inherit;
+}
+
+
+#page1 h1{
+    font-size: 10vw;
+    text-align: center;
+    width: 100%;
+    padding: 0 10px;
+    position: absolute;
+    bottom: -5%;
+    color: #c45508;
+    text-transform: uppercase;
+    font-family: america-b;
+    font-weight: 900;
+}
+#page2 h1 span{
+    font-family: america-b;
+}
+#page1 h1::before{
+    content: "bownds ranches. est. 1885";
+    position: absolute;
+    font-size: 1.1vw;
+    font-family: gilroy;
+    font-weight: 500;
+    left: 2.7vw;
+}
+#page1 h1::after{
+    content: "marketing and selling texas ranches";
+    position: absolute;
+    font-size: 1vw;
+    font-family: montserrat;
+    font-weight: 500;
+    right: 2.7vw;
+}
+
+
+#overlay{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+}
+#scroll{
+    background-image: url(https://bowndsranches.com/textures/buttonDarkBg.svg);
+    padding: 8px 20px;
+    font-family: america;
+    word-spacing: 5px;
+    color: #fff;
+    position: absolute;
+    text-transform: uppercase;
+    scale: 0;
+    transition: all ease-out 0.3s;
+}
+
+#page2{
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+    /* background-image: url(https://cdn.sanity.io/images/sjvffa0f/production/217c65c6aa3412acac7b3d2fa8adc9020e487780-2724x1936.jpg/map.jpg?rect=1,0,2723,1936&w=1024&h=728&auto=format); */
+    background-position: 60% 0%;
+    background-color: #fff;
+
+}
+#page2 h1{
+    font-size: 13vw;
+    line-height: 9.7vw;
+    word-spacing: -16px;
+    letter-spacing: -4px;
+    text-align: center;
+    overflow: hidden;
+    padding: 100px 100px;
+    color: #111;
+    position: relative;
+    background-color: #fff;
+    background-image: url(https://cdn.sanity.io/images/sjvffa0f/production/217c65c6aa3412acac7b3d2fa8adc9020e487780-2724x1936.jpg/map.jpg?rect=1,0,2723,1936&w=1024&h=728&auto=format);
+    background-position: 0% 1200%;
+    background-repeat: no-repeat;
+    font-family: america-b;
+}
+#page2 h1::before{
+    content: "THE REPRESENTATION YOU DESERVE";
+    position: absolute;
+    bottom: 10%;
+    font-size: 1.1vw;
+    width: 13%;
+    text-align: left;
+    line-height: 1.3vw;
+    font-family: gilroy;
+    word-spacing: 0px;
+    letter-spacing: 0px;
+    font-weight: 500;
+
+}
+
+#page2 h1::after{
+    content: "ONE OF AMERICA’S BEST BROKERAGES";
+    position: absolute;
+    bottom: 10%;
+    font-size: 1.1vw;
+    width: 13%;
+    right: 10%;
+    text-align: right;
+    line-height: 1.3vw;
+    font-family: gilroy;
+    word-spacing: 0px;
+    letter-spacing: 0px;
+    font-weight: 500;
+
+}
+#page2 img{
+    height: 800px;
+    position: relative;
+    left: 28vw;
+    rotate: 5deg;
+}
+#page2 h2{
+    font-size: 13vw;
+    line-height: 9.7vw;
+    word-spacing: -16px;
+    letter-spacing: -4px;
+    text-align: center;
+    padding: 100px 100px;
+    color: #111;
+    position: relative;
+    font-family: america-b;
+}
+#page2 h2::after{
+    content: "THIRD GENERATION FAMILY-OWNED RANCH BROKERAGE";
+    font-size: 1.2vw;
+    line-height: 1.3vw;
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    word-spacing: 0px;
+    letter-spacing:0px;
+    font-family: gilroy;
+    font-weight: 600;
+    transform: translate(-50%,0);
+}
+#page3{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    background-color: #111;
+    padding: 100px 120px;
+}
+
+#page3 h1{
+    color: #fff;
+    font-size: 9vw;
+    letter-spacing: -5px;
+    word-spacing: 0px;
+    line-height: 8vw;
+
+    font-family: america;
+    text-align: center;
+    text-transform: uppercase;
+}
+#page3 h2{
+    color: #fff;
+    font-size: 7.5vw;
+    letter-spacing: -5px;
+    word-spacing: 5px;
+    font-weight: 100;
+    font-family: america;
+    text-align: center;
+    -webkit-text-stroke: 3px #111;
+    text-transform: uppercase;
+}
+#page3 p{
+    color: #fff;
+    font-size: 1vw; 
+    width: 50%;
+    font-weight: 600;
+    font-family: gilroy;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2vw;
+    text-transform: uppercase;
+
+}
+
+#page3 img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+    object-position: top;
+}
+#img-div{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 150px;
+    width: 150px;
+    background-image: url(https://cdn.sanity.io/images/sjvffa0f/production/9b2b1e20d57cf6988eb3192c1a261b8475d701d4-8192x5464.jpg/JRP_BR_01_1165-Edit.jpg?rect=1038,632,3956,4832&bg=F2F1EC&fp-x=0.3681506849315068&fp-y=0.5578489448352462&w=640&h=815&fit=crop&crop=focalpoint&auto=format);
+    background-position: top;
+    background-size: cover;
+    transition: all linear 0.2s;
+}
+#img-div h5{
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    padding: 10px 10px;
+    z-index: 99;
+    background-color: #fff;
+}
+#page4{
+    min-height: 100vh;
+    width: 100%;
+    background-color: #111;
+    padding: 100px 0;
+}
+#page4>button{
+    background-image: url(https://bowndsranches.com/textures/buttonBg.svg);
+    padding: 10px 20px;
+    position: absolute;
+    border: none;
+    font-family: america;
+    text-transform: uppercase;
+    font-size: 17px;
+    z-index: 99;
+    
+}
+#page4>img{
+    height: 300px;
+    position: absolute;
+    width: 250px;
+    z-index: 9;
+
+}
+
+
+.elem{
+    border-top: 1px solid #ffffffc1;
+    position: relative;
+    cursor: default;
+    margin-top: -20px;
+}
+.elem:nth-last-child(1){
+    border-bottom: 1px solid #ffffffc1;
+}
+
+.elem h1{
+    font-size: 150px;
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    transition: opacity ease 0.1s;
+    opacity: 0.3;
+    font-family: america-b;
+
+}
+.elem h2{
+    font-size: 150px;
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    transition: opacity ease 0.1s;
+
+}
+
+#moving-text{
+    /* background-color: #111; */
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    position: absolute;
+    top: 0;
+    transition: opacity ease 0.1s;
+    opacity: 0;
+    z-index: 10;
+}
+#moving-text h2{
+    display: inline-block;
+    /* background-color: green; */
+    margin-left: -4px;
+    animation-name: move-txt;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    position: relative;
+    padding-right: 70px;
+    /* background-color: red; */
+    font-family: america-b;
+
+}
+#moving-text h2 img{
+    rotate: 45deg;
+    height: 30px;
+    right: 3%;
+    position: absolute;
+    top: 50%;
+    transform: translate(0,-50%);
+
+}
+.elem:hover #moving-text{
+    opacity: 1;
+}
+.elem:hover h1{
+    opacity: 0;
+}
+
+@keyframes move-txt {
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(-100%);
+    }
+}
+#page4A{
+    min-width: 100vw;
+    min-height: 100vh;
+   background-color: #111;
+   position: relative;
+
+}
+#page4A h1{
+    width: 70%;
+    position: relative;
+    font-size: 8vw;
+    line-height: 8vw;
+    word-spacing: 5px;
+    left: 20%;
+    top: 20%;
+   color: #fff;
+   text-transform: uppercase;
+   font-family: america;
+   align-items: center;
+}
+#page4A-sub-heading1{
+    display: flex;
+    justify-content: space-around;
+}
+#page4A-sub-heading1 p{
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 1vw;
+    font-family: america;
+}
+#page4A-sub-heading2{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 150px;
+}
+#page4A-sub-heading2 p{
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 1.8vw;
+    /* font-weight: 500; */
+    line-height: 2vw;
+    font-family: america;
+}
+#page4A-sub-heading3{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 150px;
+}
+#page4A-sub-heading3 p{
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 1.8vw;
+    line-height: 2vw;
+    /* font-weight: 500; */
+    font-family: america;
+}
+#page5{
+    min-height: 100vh;
+    width: 100%;
+    padding: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#page5-div1{
+    height: 400px;
+    width: 600px;
+    position: absolute;
+    background-size: cover;
+    rotate:5deg;
+
+    background-position: center;
+    background-image: url(https://cdn.sanity.io/images/sjvffa0f/production/336838d48da46ea806426b4185e7f8a87262a6a5-1521x974.png/image.png?rect=1,0,1520,974&bg=F2F1EC&w=1024&h=656&auto=format);
+}
+#page5-div2{
+    z-index: 99;
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    width: 600px;
+    rotate:-5deg;
+    position: absolute;
+    background-image: url(https://cdn.sanity.io/images/sjvffa0f/production/ac5d899c94acdca5124d1fcfb738940892e29544-1520x973.png/image.png?rect=0,1,1520,972&bg=F2F1EC&w=1024&h=655&auto=format);
+}
+#page6{
+    min-height: 100vh;
+    width: 100%;
+    padding: 2px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#page6 h1{
+    width: 70%;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 5vw;
+    line-height: 5vw;
+    font-family: america;
+    word-spacing: -2px;
+    top: -10%;
+}
+#page6 p{
+    margin-top: 20px;
+    width: 40%;
+    color: #fff;
+    text-transform: capitalize;
+    font-size: 1vw;
+    line-height: 1vw;
+    word-spacing: 2px;
+    font-family: america;
+    font-weight: 100;
+}
+#page7{
+    min-height: 200vh;
+    width: 100%;
+    padding: 2px;
+    position: relative;
+}
+#page7 img{
+    width: 100%;
+    object-fit: cover;
+    position: absolute;
+}
+#page7-text{
+    position: relative;
+    padding: 5px 20px;
+    z-index: 99;
+}
+#page7-text h1{
+    font-size: 7vw;
+    line-height: 7vw;
+    color: #fff;
+    font-family: america;
+}
+#text-right{
+    position: absolute;
+    top: 150%;
+    right: 10%;
+    width: 20%;
+}
+#text-right p{
+    color: #fff;
+    font-weight: 600;
+    font-size: 15px;
+}
+#page7-text button{
+    padding: 12px 30px;
+    background-color: transparent;
+    border: 1px solid white;
+    color: #fff;
+    font-family: america;
+    position: relative;
+    overflow: hidden;
+    margin-top: 30px;
+    font-size: 15px;
+    transition: all ease 0.5s;
+}
+#page7-text button:hover{
+    color: #111;
+}
+#page7-text button::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #ffffffc1;
+    left: 0%;
+    top: 100%;
+    transition:all ease 0.2s;
+    z-index: -1;
+}
+#page7-text button:hover::after{
+    top: 0%;
+}
+#text-center{
+    position: absolute;
+    top: 235%;
+    left: 15%;
+    /* transform: translate(-50%,0); */
+    text-align: center;
+    font-family: america;
+    color: #fff;
+}
+#text-center h2{
+    width: 80%;
+    font-size: 3.3vw;
+}
+#page8{
+    min-height: 200vh;
+    width: 100%;
+    background-color: #060505;
+}
+
+@media (max-width:600px) {
+    
+}
